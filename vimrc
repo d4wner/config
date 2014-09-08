@@ -59,7 +59,7 @@ return ";\n"
 endif
 endfunc
 
-autocmd BufNewFile *.cpp,*.[ch],*.sh,*.php,*.py exec ":call SetTitle()"
+autocmd BufNewFile *.[ch],*.sh,*.php,*.py exec ":call SetTitle()"
 ""定义函数SetTitle，自动插入文件头
 func SetTitle()
 "如果文件类型为.sh文件
@@ -75,8 +75,8 @@ call append(line("."),"#coding=utf-8")
 call append(line(".")+1, "")
 
 elseif &filetype == 'php'
-call setline(1,"123")
-call append(line("."),"123")
+call setline(1,"<?php")
+call append(line("."),"?>")
 "call append(line(".")+1, "")
 
 else
