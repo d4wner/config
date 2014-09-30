@@ -118,7 +118,8 @@ alias py='python2.7'
 alias spy='sudo python2.7'
 alias sd='sudo shutdown now -h'
 alias rm="trash"
-
+alias gf="cd ~/Desktop/github"
+alias h="cd ~"
 
 echo """________                                 _________      .__    .___            """
 echo """\______ \   ____   _____   ____   ____  /   _____/_____ |__| __| _/_____  ____ """
