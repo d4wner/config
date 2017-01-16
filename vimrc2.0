@@ -26,11 +26,14 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=chinese
 set fileencodings=ucs-bom,utf-8,chinese
-set langmenu=zh_CN.utf-
+set langmenu=zh_CN.utf-8
 " 不产生临时文件
 set nobackup
 set nowritebackup
 set noswapfile
+
+colorscheme desert
+syntax on
 
 "四个空格;
 filetype plugin indent on
@@ -58,4 +61,3 @@ else
     return ";\n"
 endif
 endfunc
-
